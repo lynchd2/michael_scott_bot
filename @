@@ -1,0 +1,9 @@
+require 'slack-ruby-bot'
+
+class PongBot < SlackRubyBot::Bot
+  command 'that is really big' do |client, data, match|
+    client.say(text: "that's what she said", channel: 'G7Y05QWTB')
+  end
+end
+
+PongBot.run
